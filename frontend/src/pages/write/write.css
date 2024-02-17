@@ -1,0 +1,89 @@
+.write{
+    padding-top: 50px;
+    
+}
+.writeImg{
+    margin-left: 150px;
+    width: 70%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.writeForm{
+    position: relative;
+}
+.writeFormGroup{
+    margin-left: 150px;
+   display: flex;
+   align-items: center;
+   
+}
+.writeIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(121, 118, 118);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+.writeIcon:hover {
+    color: #0066cb;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 86, 173, 0.5);
+    animation: bounce 0.8s ease-out; /* Added bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.writeInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    background-color: rgb(201, 230, 233);
+}
+.writeInput:focus{
+    outline: none;
+}
+.writeText{
+    font-size: 20px;
+    height: 100vh;
+}
+.writeSubmit {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transition */
+
+}
+
+.writeSubmit:hover {
+    color: black;
+    background-color: #46e83a; /* New color on hover */
+    transform: scale(1.1);
+}
+
