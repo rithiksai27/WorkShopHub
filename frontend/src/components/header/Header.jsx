@@ -120,6 +120,12 @@ export default function Header() {
   </div>
 </div>
 
+
+      <div className="captionThis">
+        <h2>Empower, Inspire, Share</h2>
+      </div>
+
+      
       
 
     </div>
