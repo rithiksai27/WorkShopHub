@@ -119,6 +119,7 @@ export default function SinglePost({ postId }) {
           </button>
         )}
       </div>
+      
     </div>
   );
 }
