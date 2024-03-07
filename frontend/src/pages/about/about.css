@@ -1,0 +1,87 @@
+.aboutusdesign {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    flex-direction: row;
+    letter-spacing: 0.115em;
+    margin-top: 2%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .aboutusdesign.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .short-description {
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20%;
+    margin-bottom: 25px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .short-description.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .team.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .team-Member {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border: 1px solid black;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .team-Member img {
+    width: 210px;
+    height: 270px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .team-Member.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h3 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.115em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  h3.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import "./home.css";
 import { useLocation } from "react-router";
+
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const {search} = useLocation();
@@ -16,9 +17,8 @@ export default function Home() {
       }
     };
 
-    fetchPosts(); // Move this inside the useEffect block
-
-  }, [search]); // Empty dependency array to run only once when component mounts
+    fetchPosts(); 
+  }, [search]); 
 
   return (
     <>
