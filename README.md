@@ -1,1 +1,1 @@
-DEPLOYMENT LINK: https://snap-write.vercel.app/
+DEPLOYMENT LINK: https://blogging-snapwrite.vercel.app/
