@@ -28,23 +28,23 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/about">
-              ABOUT
-            </Link>
-          </li>
-          <li className="topListItem">
             <Link className="link" to="/contact">
               CONTACT
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/write">
-              WRITE
+            <Link className="link" to="/contact">
+              SCHEDULE
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/posts">
-              POSTS
+            <Link className="link" to="/contact">
+              PAST SESSIONS
+            </Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/contact">
+              FEEDBACK
             </Link>
           </li>
           <li className="topListItem" onClick={handleLogout}>
@@ -53,30 +53,39 @@ export default function TopBar() {
         </ul>
       </div>
       <div className="topRight">
-        {user ? (
-          <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
-          </Link>
-        ) : (
-          <ul className="topList">
-            <li className="topListItem">
-              <Link className="link" to="/login">
-              <button type="button" className="btn btn-outline-secondary">
-      LOGIN
-    </button>
-              </Link>
-            </li>
-            <li className="topListItem">
-              <Link className="link" to="/register">
-              <button type="button" className="btn btn-outline-secondary">
-      REGISTER
-    </button>
-              </Link>
-            </li>
-          </ul>
-        )}
-        <i className="topSearchIcon fas fa-search"></i>
+  {user ? (
+    <Link to="/settings">
+      <img className="topImg" src={PF + user.profilePic} alt="" />
+    </Link>
+  ) : (
+    <ul className="topList">
+      <li className="topListItem">
+        <Link className="link" to="/login">
+          <button type="button" className="btn btn-outline-secondary">
+            LOGIN
+          </button>
+        </Link>
+      </li>
+      <li className="topListItem">
+        <Link className="link" to="/admin">
+          <button type="button" className="btn btn-outline-secondary">
+            ADMIN
+          </button>
+        </Link>
+      </li>
+      <li className="topListItem">
+        <Link className="link" to="/register">
+          <button type="button" className="btn btn-outline-secondary">
+            REGISTER
+          </button>
+        </Link>
+      </li>
+    </ul>
+  )}
+  
+  <i className="topSearchIcon fas fa-search"></i>
+</div>
       </div>
-    </div>
+
   );
 }
