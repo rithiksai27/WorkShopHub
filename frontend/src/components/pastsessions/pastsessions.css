@@ -1,0 +1,111 @@
+.pastsessions-container {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.unsplash.com/photo-1640609432611-f4e2ae26898c?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+      no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 3rem; /* Increased margin between cards */
+    padding: 2rem; /* Ensure proper alignment on smaller screens */
+  }
+  
+  .pastsessions-card {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 450px; /* Larger card width */
+    transition: transform 0.5s, box-shadow 0.5s;
+    animation: float-card 5s infinite alternate;
+  }
+  
+  .pastsessions-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  }
+  
+  .pastsessions-card h2 {
+    margin-bottom: 1.5rem;
+    color: #16a085;
+    font-size: 2.5rem; /* Larger heading text */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .pastsessions-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .pastsessions-card li {
+    font-size: 1.4rem; /* Larger font size */
+    color: #ecf0f1;
+    margin-bottom: 1rem;
+    background: rgba(44, 62, 80, 0.8);
+    padding: 0.7rem;
+    border-radius: 8px;
+  }
+  
+  .pastsessions-card li:hover {
+    background: rgba(46, 204, 113, 0.9);
+    color: #fff;
+  }
+  
+  .pastsessions-card li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  .pastsessions-card li a:hover {
+    color: #f39c12;
+  }
+  
+  .new-schedule-btn {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: linear-gradient(45deg, #f39c12, #e74c3c);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .new-schedule-btn:hover {
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    transform: scale(1.1);
+  }
+  
+  @keyframes float-card {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .pastsessions-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .pastsessions-card {
+      width: 90%;
+    }
+  }
+  

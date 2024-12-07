@@ -33,17 +33,17 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/contact">
+            <Link className="link" to="/schedule">
               SCHEDULE
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/contact">
+            <Link className="link" to="/pastsessions">
               PAST SESSIONS
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/contact">
+            <Link className="link" to="/feedback">
               FEEDBACK
             </Link>
           </li>

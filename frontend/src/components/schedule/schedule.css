@@ -1,0 +1,106 @@
+.schedule-container {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://plus.unsplash.com/premium_photo-1706559780094-648dbe2b2bd0?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+      no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .schedule-card {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 500px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    animation: rotate-card 5s infinite alternate;
+  }
+  
+  .schedule-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  .schedule-card h2 {
+    margin-bottom: 1rem;
+    color: #f39c12;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .schedule-card form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .schedule-card label {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    text-align: left;
+    grid-column: span 2; /* Span across two columns */
+  }
+  
+  .schedule-card input {
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #34495e;
+    font-size: 1rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+    width: 100%;
+  }
+  
+  .schedule-card input::placeholder {
+    color: #bdc3c7;
+  }
+  
+  .schedule-card button {
+    padding: 1rem;
+    background: linear-gradient(45deg, #f39c12, #e74c3c);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    grid-column: span 2; /* Span across two columns */
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .schedule-card button:hover {
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    transform: scale(1.05);
+  }
+  
+  @keyframes rotate-card {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(10deg);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .schedule-card {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .schedule-card form {
+      grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+  
+    .schedule-card button {
+      grid-column: span 1; /* Adjust button span for single column */
+    }
+  }
+  

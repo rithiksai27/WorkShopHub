@@ -11,6 +11,10 @@ import Register from "./pages/register/Register";
 import { Context } from "./context/Context";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About"
+import Schedule from "./components/schedule/Schedule"
+import Pastsessions from "./components/pastsessions/Pastsessions"
+import Feedback from "./components/feedback/Feedback";
+
 export default function App() {
   const { user } = useContext(Context);
   return (
@@ -26,6 +30,9 @@ export default function App() {
         <Route path='/posts/:id' element={<Single/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/pastsessions" element={<Pastsessions />} />
+        <Route path="/feedback" element={<Feedback />} />
 
       </Routes>
     </Router>
