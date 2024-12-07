@@ -123,6 +123,20 @@ export default function Header() {
         <h2>Empower, Inspire, Share</h2>
       </div>
 
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52987.463928278055!2d80.63921502048808!3d16.4235325325625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1733588799461!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Google Map"
+      ></iframe>
+    </div>
+
+
       
       
 
